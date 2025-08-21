@@ -9,7 +9,7 @@ The Danfoss/Secomp BD35F compressor is a widely used DC powerd compressor. I'm u
 - Easy upload of firmware without Arduino IDE possible.
 - Temperature is measured with [DS18B20](https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRNmu3D8hUJPGhuSA7nLRoa413b-gMmKO3SzPfPqZvY6wbsBIp207lLPlJ23y0RRw-2xIi-4CoqkTE98FSd--icjlcXm1W_YQ) sensor.
 - Implements a Two-Point with I controller to increase the accuracy.
-- Supports variable compressor speeds (2000 - 3500 RPM) to adjust cooling capacity and power consuption.
+- Supports variable compressor speeds (2000 - 3500 RPM) to adjust cooling capacity and power consumption.
 - Support Boost function to cool down with more power.
 - Support automatic or manual Defrost routine.
 - Wlan support (AP or client mode). Configurable via Wifi Manager.
@@ -90,4 +90,12 @@ Wit the buttont you can set the mode:
 
 ![Web2](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControlWeb2.png)
 
+With the settings page you can control the behaviour of the controller without a need to recompile the code. The following settings are available:
 
+- Language:   0=English 1= German language
+- Hysteresis: Sets the Hysteresis/Deviation for the two point controller. 2 means +/- 2 K. For a set teemperature of 6 that means the temperature will between 4 and 8 degrees.
+- RPM:         The desired speed of the compressor. Set as low as possible to reduce power consumption (2000 = 3,5A, 3500 = 7A).
+- AVG          Error: This is the alowd deviation from the averagre. 0 meand the the compresoor will cool down in every cycle until the set temperature is reached.
+- Max          High: The maximum high temperture. The compressro will be switched off if ths level is reached. Independet of average temperature.
+- Max Low:     The maximum low temperture. The compressro will be switched on if ths level is reached. Independet of average temperature.
+- Boost Temp.: 
