@@ -1,2 +1,2 @@
-# BD35F-FridgeController
+# BD35F Fridge Controller
 An electronic thermostat for a Danfoss/Secomp BD35F Compressor with ESP8266.
