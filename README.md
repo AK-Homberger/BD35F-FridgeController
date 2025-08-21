@@ -15,7 +15,7 @@ The Danfoss/Secop BD35F compressor is a widely used DC powered compressor. I'm u
 - Supports Boost function to cool down with more power.
 - Supports automatic or manual Defrost routine.
 - Wlan support (AP or client mode). Configurable via Wifi Manager.
-- Browser interface and MDNS support (http://fridgecontrol-local).
+- Browser interface and MDNS support (http://fridgecontrol.local).
 - All parameters are configurable with a browser and stored in NVS of ESP8266.
 - PCB layout available in repository (KiCad).
 
