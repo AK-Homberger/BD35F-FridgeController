@@ -61,13 +61,7 @@ This works without installation of the IDE. Simply download the [NodeMCU-PyFlash
 
 ![Flasher](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/Flasher.png)
 
-Select appropriate Serial port and the mode to the bin file in the deownloades code:
-
-
-
-
-
-
+Select appropriate Serial port and the move to the bin file in the deownloades code. Use the seetings as shown fo the upload.
 
 ## Usage
 
