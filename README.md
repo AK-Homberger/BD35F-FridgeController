@@ -30,15 +30,15 @@ The BS35F is measuering the current between T and C. C is GND level and T has a 
 
 The PCB has three connectors.
 
-### Power 
+1. Power 
 Cconnect +/-to 12 Volt to the J1 connector. There is a protection against wrong cabling for +/-.
 
-### DS18B20 Temperature Sensor
+2. DS18B20 Temperature Sensor
 
 Connect the three cables from the DS18B20 to the connector J2. The data line has already the pull-up resistor on the PCB.
 Place the Sensor in the Fridge in middle highth.
 
-### BD35F Compressor
+3. BD35F Compressor
 
 Connect J3 to the compressor connector. Remove the old thermostat cables and connect the cables C and  T to the compressor.
 You need appropriate cable shoes for the connection.
