@@ -42,6 +42,28 @@ Connect J3 to the compressor connector. Remove the old thermostat cables and con
 You need appropriate cable shoes for the connection.
 
 ## Software
+There are two ways to install the software to the D1 Mini. Either you installan uste the Arduino IDE or you direcly flash the BIN-file to the device.
+
+### Arduino IDE
+Just download the IDE (version 2.x works well). Then add the Boad URL in preferences: "https://arduino.esp8266.com/stable/package_esp8266com_index.json" and install the Board software in the IDE. Then install the following libraries with the libray manager:
+
+- WiFiManager
+- ArduinoJson
+- OneWire
+- DallasTemperature
+- Preferences
+
+Then download the sketch from GitHud (Button "Code§ and download as ZIP) and extract it. Then move to the "FridgeControl.ino" file and open the sketch.
+Connect the D1 mini with an USB-Cable to the PC and upload the sketch to the D1 Mini. Later uploades can be done via OTA function viy network.
+
+### NodeMCU-PyFlasher
+This works without installation of the IDE. Simply download the [NodeMCU-PyFlasher](https://github.com/nodemcu/nodemcu-firmware/releases) ans start it. 
+
+![Flasher](https://github.com/marcelstoer/nodemcu-pyflasher/raw/master/images/gui.png)
+
+[Usage](https://nodemcu.readthedocs.io/en/release/getting-started/#nodemcu-pyflasher)
+
+
 
 ## Usage
 
