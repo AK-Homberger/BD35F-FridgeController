@@ -28,18 +28,16 @@ The temperature is mesuered with a DS18B20 sensor. The compressor is controlled 
 
 The BS35F is measuering the current between T and C. C is GND level and T has a pull-up resitor to 5 Volt. Only a few milliamper are flowing. A small transitor (BC337) is sufficient here. There are two options. T Permanently GND level means 2000 RPM speed. A PWM signal (5 KHz) with a defined duty cycle is used to set seeds from 2000 to 3500 RPM.
 
-The PCB has three connectors.
+The PCB has three connectors:
 
-1. Power 
+### 1. Power 
 Cconnect +/-to 12 Volt to the J1 connector. There is a protection against wrong cabling for +/-.
 
-2. DS18B20 Temperature Sensor
-
+### 2. DS18B20 Temperature Sensor
 Connect the three cables from the DS18B20 to the connector J2. The data line has already the pull-up resistor on the PCB.
 Place the Sensor in the Fridge in middle highth.
 
-3. BD35F Compressor
-
+### 3. BD35F Compressor
 Connect J3 to the compressor connector. Remove the old thermostat cables and connect the cables C and  T to the compressor.
 You need appropriate cable shoes for the connection.
 
