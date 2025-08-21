@@ -32,7 +32,7 @@ The BS35F is measuering the current between T and C. C is on GND level and T has
 The PCB has three connectors:
 
 ### 1. Power 
-Cconnect +/-to 12 Volt to the J1 connector. There is a protection against wrong cabling for +/-.
+Connect +/-to 12 Volt to the J1 connector. There is a protection against wrong cabling for +/-.
 
 ### 2. DS18B20 Temperature Sensor
 Connect the three cables from the DS18B20 to the connector J2. The data line has already the pull-up resistor on the PCB. Red = VDD, Yello = D, Blue = GND.
