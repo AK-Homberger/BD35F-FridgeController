@@ -40,7 +40,7 @@ Place the Sensor in the Fridge in middle highth.
 
 ### BD35F Compressor
 
-Conntect J3 to the compressor connector. Remove teh old thermostat cables and connect the cables C and  T to the compress or.
+Connect J3 to the compressor connector. Remove the old thermostat cables and connect the cables C and  T to the compressor.
 You need appropriate cable shoes for the connection.
 
-
+## Software
