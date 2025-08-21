@@ -108,6 +108,7 @@ With the settings page you can control the behaviour of the controller without a
 After changes press the "Set" butten. The entered value will be checked against the allowed ranges. If everyting is OK you can use "Back" to go back to the main page.
 
 # Parts
+- PCB [Aisler](https://aisler.net/p/VBBOGMUR)
 - U1 D1 Mini [Link](https://www.reichelt.de/de/en/d1-mini-esp8266-v3-0-d1-mini-p253978.html?&nbc=1)
 - U2 Voltage regulator [Link](https://www.reichelt.de/de/de/shop/produkt/dc_dc-wandler_r78e_5_v_500_ma_single-159161)
 - R1 Resistor 1 KOhm [Link](https://www.reichelt.de/de/en/carbon-film-resistor-1-4-w-5-1-0-kilo-ohms-1-4w-1-0k-p1315.html?&trstct=pos_2&nbc=1)
