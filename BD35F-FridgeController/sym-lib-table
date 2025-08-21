@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "NMEA0183-WiFi-Multiplexer-rescue")(type "KiCad")(uri "${KIPRJMOD}/NMEA0183-WiFi-Multiplexer-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "BD35F-FridgeController-rescue")(type "KiCad")(uri "${KIPRJMOD}/BD35F-FridgeController-rescue.kicad_sym")(options "")(descr ""))
+)

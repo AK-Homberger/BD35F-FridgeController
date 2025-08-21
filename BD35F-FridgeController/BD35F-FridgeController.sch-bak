@@ -1,0 +1,237 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 604342F8
+P 7050 4100
+F 0 "U1" H 7050 5050 50  0000 C CNN
+F 1 "WeMos_D1_mini" H 7050 5150 50  0000 C CNN
+F 2 "Module:WEMOS_D1_mini_light" H 7050 2950 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 5200 2950 50  0001 C CNN
+	1    7050 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 60439978
+P 1650 4600
+F 0 "J2" H 1568 4275 50  0000 C CNN
+F 1 "NMEA In" H 1568 4366 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 4600 50  0001 C CNN
+F 3 "~" H 1650 4600 50  0001 C CNN
+	1    1650 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6043EB08
+P 1650 3350
+F 0 "J1" H 1568 3025 50  0000 C CNN
+F 1 "NMEA In" H 1568 3116 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 3350 50  0001 C CNN
+F 3 "~" H 1650 3350 50  0001 C CNN
+	1    1650 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 4300 5950 4300
+Wire Wire Line
+	5950 4300 5950 4400
+Wire Wire Line
+	5950 4400 6650 4400
+$Comp
+L Device:CP C2
+U 1 1 6043F041
+P 3200 3050
+F 0 "C2" H 3318 3096 50  0000 L CNN
+F 1 "1µ" H 3318 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3238 2900 50  0001 C CNN
+F 3 "~" H 3200 3050 50  0001 C CNN
+	1    3200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 6043FA82
+P 5450 3050
+F 0 "C4" H 5568 3096 50  0000 L CNN
+F 1 "1µ" H 5568 3005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5488 2900 50  0001 C CNN
+F 3 "~" H 5450 3050 50  0001 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2900 3550 2900
+Wire Wire Line
+	3200 3200 3550 3200
+Wire Wire Line
+	5150 2900 5450 2900
+Wire Wire Line
+	5150 3200 5450 3200
+$Comp
+L Device:CP C1
+U 1 1 604409F9
+P 2800 3650
+F 0 "C1" H 2918 3696 50  0000 L CNN
+F 1 "1µ" H 2918 3605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 2838 3500 50  0001 C CNN
+F 3 "~" H 2800 3650 50  0001 C CNN
+	1    2800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 60441930
+P 3200 3650
+F 0 "C3" H 3082 3604 50  0000 R CNN
+F 1 "1µ" H 3082 3695 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3238 3500 50  0001 C CNN
+F 3 "~" H 3200 3650 50  0001 C CNN
+	1    3200 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2800 3500 2800 3400
+Wire Wire Line
+	2800 3400 3550 3400
+Wire Wire Line
+	3200 3500 3550 3500
+Wire Wire Line
+	3550 3500 3550 3700
+Wire Wire Line
+	1850 3350 1850 3800
+Wire Wire Line
+	1850 3800 2600 3800
+Connection ~ 2800 3800
+Wire Wire Line
+	1850 4600 2800 4600
+Wire Wire Line
+	2800 5150 4350 5150
+Wire Wire Line
+	4350 5150 4350 5000
+Wire Wire Line
+	4350 5150 7050 5150
+Wire Wire Line
+	7050 5150 7050 4900
+Connection ~ 4350 5150
+Wire Wire Line
+	7150 3300 7150 3200
+Wire Wire Line
+	7150 3200 6150 3200
+Wire Wire Line
+	6150 3200 6150 2600
+Wire Wire Line
+	6150 2600 4350 2600
+Connection ~ 2800 4600
+Wire Wire Line
+	2800 4600 2800 5150
+Wire Wire Line
+	2800 3800 2800 4600
+Wire Wire Line
+	1850 4500 3550 4500
+Wire Wire Line
+	1850 3250 2450 3250
+Wire Wire Line
+	2450 3250 2450 4300
+Wire Wire Line
+	2450 4300 3550 4300
+Wire Wire Line
+	2800 3800 3200 3800
+$Comp
+L Interface_UART:MAX232 U2
+U 1 1 60437BD0
+P 4350 3800
+F 0 "U2" H 4350 5181 50  0000 C CNN
+F 1 "MAX232" H 4350 5090 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4400 2750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 4350 3900 50  0001 C CNN
+	1    4350 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 60437FA3
+P 6150 2600
+F 0 "#PWR0101" H 6150 2450 50  0001 C CNN
+F 1 "+5V" H 6165 2773 50  0000 C CNN
+F 2 "" H 6150 2600 50  0001 C CNN
+F 3 "" H 6150 2600 50  0001 C CNN
+	1    6150 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6150 2600
+$Comp
+L power:GND #PWR0102
+U 1 1 60438682
+P 4350 5150
+F 0 "#PWR0102" H 4350 4900 50  0001 C CNN
+F 1 "GND" H 4355 4977 50  0000 C CNN
+F 2 "" H 4350 5150 50  0001 C CNN
+F 3 "" H 4350 5150 50  0001 C CNN
+	1    4350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 6044E52D
+P 1650 2600
+F 0 "J3" H 1568 2275 50  0000 C CNN
+F 1 "Power" H 1568 2366 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1650 2600 50  0001 C CNN
+F 3 "~" H 1650 2600 50  0001 C CNN
+	1    1650 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U3
+U 1 1 6044EDD0
+P 2400 2500
+F 0 "U3" H 2400 2742 50  0000 C CNN
+F 1 "R-78E50-10_TO220" H 2400 2651 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2400 2725 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 2400 2450 50  0001 C CNN
+	1    2400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2500 2100 2500
+Wire Wire Line
+	2400 2800 2600 2800
+Wire Wire Line
+	2600 2800 2600 3800
+Connection ~ 2600 3800
+Wire Wire Line
+	2600 3800 2800 3800
+Wire Wire Line
+	2700 2500 3400 2500
+Wire Wire Line
+	3400 2500 3400 2600
+Wire Wire Line
+	3400 2600 4350 2600
+Connection ~ 4350 2600
+Wire Wire Line
+	1850 2600 1850 2800
+Wire Wire Line
+	1850 2800 2400 2800
+Connection ~ 2400 2800
+Wire Wire Line
+	5150 4500 6200 4500
+Wire Wire Line
+	6200 4500 6200 4300
+Wire Wire Line
+	6200 4300 6650 4300
+$EndSCHEMATC
