@@ -35,7 +35,7 @@ The PCB has three connectors:
 Cconnect +/-to 12 Volt to the J1 connector. There is a protection against wrong cabling for +/-.
 
 ### 2. DS18B20 Temperature Sensor
-Connect the three cables from the DS18B20 to the connector J2. The data line has already the pull-up resistor on the PCB.
+Connect the three cables from the DS18B20 to the connector J2. The data line has already the pull-up resistor on the PCB. Red = VDD, Yello = D, Blue = GND.
 Place the Sensor in the Fridge in middle highth.
 
 ### 3. BD35F Compressor
