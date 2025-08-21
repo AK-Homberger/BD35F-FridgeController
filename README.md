@@ -95,7 +95,7 @@ With the settings page you can control the behaviour of the controller without a
 - Language:   0=English 1= German language
 - Hysteresis: Sets the Hysteresis/Deviation for the two point controller. 2 means +/- 2 K. For a set teemperature of 6 that means the temperature will between 4 and 8 degrees.
 - RPM:         The desired speed of the compressor. Set as low as possible to reduce power consumption (2000 = 3,5A, 3500 = 7A).
-- AVG          Error: This is the alowd deviation from the averagre. 0 meand the the compresoor will cool down in every cycle until the set temperature is reached.
+- AVG Error:   This is the allowed deviation from the averagre. 0 means the compressor will cool down in every cycle until the set temperature is reached. The average temperature is calculated with a low pass filter with K of 1/3600. Average over about one hour.
 - Max          High: The maximum high temperture. The compressro will be switched off if ths level is reached. Independet of average temperature.
 - Max Low:     The maximum low temperture. The compressro will be switched on if ths level is reached. Independet of average temperature.
 - Boost Temp.: Desired temperature for the boost function.
