@@ -95,7 +95,7 @@ void setup() {
   int wifi_retry = 0;
 
   // Sensor and Thermostat pin
-  pinMode(SensorPin, INPUT_PULLUP);  // Cooment out if you use an external pull up resistor
+  // pinMode(SensorPin, INPUT_PULLUP);  // Comment out if you use an external pull up resistor
   pinMode(FridgePin, OUTPUT);        // Sets relay/PWM pin as output
   analogWriteFreq(5000);             // BD35F expects 5 kHz for PWM with duty cycle control
 
@@ -566,3 +566,4 @@ void loop() {
   web_server.handleClient();
   ArduinoOTA.handle();
 }
+
