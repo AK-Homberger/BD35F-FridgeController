@@ -24,12 +24,12 @@
 
 // Version 1.0, 20.08.2025, AK-Homberger
 
-#include <WiFiManager.h>    // https://github.com/tzapu/WiFiManager
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ArduinoOTA.h>
 
 // External libraries. Install via Library Manager in IDE
+#include <WiFiManager.h>    // https://github.com/tzapu/WiFiManager
 #include <ArduinoJson.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
