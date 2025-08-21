@@ -59,6 +59,11 @@ Connect the D1 mini with an USB-Cable to the PC and upload the sketch to the D1 
 ### NodeMCU-PyFlasher
 This works without installation of the IDE. Simply download the [NodeMCU-PyFlasher](https://github.com/nodemcu/nodemcu-firmware/releases) ans start it. 
 
+![Flasher](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/Flasher.png)
+
+Select appropriate Serial port and the mode to the bin file in the deownloades code:
+
+
 
 
 
