@@ -5,6 +5,7 @@ The Danfoss/Secomp BD35F compressor is a widely used DC powerd compressor. I'm u
 
 ## Features:
 - Uses ESP8266 (D1 Mini) as processor.
+- Dual language support (English/German)
 - Easy upload of firmware without Arduino IDE possible.
 - Temperature is measured with [DS18B20](https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRNmu3D8hUJPGhuSA7nLRoa413b-gMmKO3SzPfPqZvY6wbsBIp207lLPlJ23y0RRw-2xIi-4CoqkTE98FSd--icjlcXm1W_YQ) sensor.
 - Implements a Two-Point with I controller to increase the accuracy.
