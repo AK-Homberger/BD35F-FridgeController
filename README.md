@@ -98,4 +98,14 @@ With the settings page you can control the behaviour of the controller without a
 - AVG          Error: This is the alowd deviation from the averagre. 0 meand the the compresoor will cool down in every cycle until the set temperature is reached.
 - Max          High: The maximum high temperture. The compressro will be switched off if ths level is reached. Independet of average temperature.
 - Max Low:     The maximum low temperture. The compressro will be switched on if ths level is reached. Independet of average temperature.
-- Boost Temp.: 
+- Boost Temp.: Desired temperature for the boost function.
+- Boost Hyst.: Hysteresis/Deviation for the boost function.
+- Boost Time   Time in minutes for the boost function.
+- Boost RPM:   Compressoe speed for the boost function.
+- Max Runtime: Useed to detect a needed Defrost cycle. If the compressor runs for the defined time a manadtory defrost cycle will start.
+- Defrost Time: Set the time for the defrost cycle. Time depends on local fridge details.
+
+After changes press the "Set" butten. The entered value will be checjed against the allowed ranges. If everyting is OK you can use "Back" to go bacj to the main page.
+
+
+-   
