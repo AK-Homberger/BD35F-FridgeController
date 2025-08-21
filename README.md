@@ -81,7 +81,7 @@ With the slidebar and +/- you can modify the the set temperature.
 
 With the buttos you can set the mode:
 
-- Auto: Stndard mode to control the temperature.
+- Auto: Standard mode to control the temperature.
 - ON: Switch on the compressor permanently.
 - Off: Switch off the compressor permanently.
 - Boost: Cool down with a different set point and hysteresis.
