@@ -105,5 +105,3 @@ With the settings page you can control the behaviour of the controller without a
 
 After changes press the "Set" butten. The entered value will be checked against the allowed ranges. If everyting is OK you can use "Back" to go back to the main page.
 
-
--   
