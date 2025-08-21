@@ -59,9 +59,8 @@ Connect the D1 mini with an USB-Cable to the PC and upload the sketch to the D1 
 ### NodeMCU-PyFlasher
 This works without installation of the IDE. Simply download the [NodeMCU-PyFlasher](https://github.com/nodemcu/nodemcu-firmware/releases) ans start it. 
 
-![Flasher](https://github.com/marcelstoer/nodemcu-pyflasher/raw/master/images/gui.png)
 
-[Usage](https://nodemcu.readthedocs.io/en/release/getting-started/#nodemcu-pyflasher)
+
 
 
 
