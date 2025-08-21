@@ -97,7 +97,7 @@ With the settings page you can control the behaviour of the controller without a
 - RPM:         The desired speed of the compressor. Set as low as possible to reduce power consumption (2000 = 3,5A, 3500 = 7A). "0" means T permanently to GND and 2000 RPM (original mechanical thermostat behaviour).
 - AVG Error:   This is the allowed deviation from the average. 0 means the compressor will cool down in every cycle until the average temperature reaches the set temperature. The average temperature is calculated with a low pass filter with K of 1/3600. Mens average over about one hour.
 - Max          High: The maximum high temperture. The compressor will be switched off if ths level is reached. Independent of average temperature.
-- Max Low:     The maximum low temperture. The compressro will be switched on if ths level is reached. Independent of average temperature.
+- Max Low:     The maximum low temperture. The compressor will be switched on if ths level is reached. Independent of average temperature.
 - Boost Temp.: Desired temperature for the boost function.
 - Boost Hyst.: Hysteresis/Deviation for the boost function.
 - Boost Time   Time in minutes for the boost function.
