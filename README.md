@@ -3,7 +3,7 @@ An electronic thermostat for a Danfoss/Secop [BD35F](https://assets.danfoss.com/
 
 ![Secomp](https://www.secop.com/fileadmin/_processed_/3/d/csm_bd-p-housing-image-center_53edf1a5b6.png)
 
-The Danfoss/Secop BD35F compressor is a widely used DC powerd compressor. I'm using it on my boat to cool the fridge. Unfortunately, the original thermostat was defect. Therfore, I decided to create an electronic alternative that has more features than the standard mechanical one.
+The Danfoss/Secop BD35F compressor is a widely used DC powered compressor. I'm using it on my boat to cool the fridge. Unfortunately, the original thermostat was defect. Therfore, I decided to create an electronic alternative that has more features than the standard mechanical one.
 
 ## Features:
 - Uses ESP8266 (D1 Mini) as processor.
