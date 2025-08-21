@@ -42,3 +42,20 @@ Connect J3 to the compressor connector. Remove the old thermostat cables and con
 You need appropriate cable shoes for the connection.
 
 ## Software
+
+## Usage
+
+After upload of the firmware you have to re-power the device to start the Wifi-Manager (within 2 minutes after restart). Just look for a new WLAN natwork wirh the name "Fridgeconfig_AP" and connect to it, withot a password. The browser will start automativally. Then selct the network (ssid) you want to connect to an enter the password. 
+If you don't configure or press "Exit" the device remain in AP mode with a changed nam "Fridgecontrol_AP".
+
+You can use this to test the device without a real network to connect too. But this is an open connection don't use the permannetly.
+
+To start the web interface enter "http://fridgecontrol.local" in the browser. The interface looks then like this:
+
+![Web1](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControlWeb1.png)
+
+
+
+
+![Web2](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControlWeb2.png)
+
