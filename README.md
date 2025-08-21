@@ -74,8 +74,19 @@ To start the web interface enter "http://fridgecontrol.local" in the browser. Th
 
 ![Web1](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControlWeb1.png)
 
+The page shows the current fridge temeperature, the average temperature, the desired Set Temperature. Duty cycle shown the percentage of the On time compared to the last On and Off time cycle. The values are also shown in minutes (On/Off). The status filed show the staus of the controller (Auto, On, Off, Boost or Defrost).
 
+With the slidebar and +/- you can modify the the set temperature.
 
+Wit the buttont you can set the mode:
+
+- Auto: Satdard mode to control the temperature.
+- ON: Switch on the compressor permanently.
+- Off: Switch off the compressor permanently.
+- Boost: Cool down with a different set point and hysteresis.
+- Defrost: Manually start a dfrost cycle.
+- Set: Opens a ssettings page.
 
 ![Web2](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControlWeb2.png)
+
 
