@@ -1,5 +1,5 @@
 # BD35F Fridge Controller
-An electronic thermostat for a Danfoss/Secomp BD35F Compressor with ESP8266 (D1 Mini).
+An electronic thermostat for a Danfoss/Secomp [BD35F](https://assets.danfoss.com/documents/latest/178661/AI376451289296en-000101.pdf) Compressor with ESP8266 (D1 Mini).
 
 The Danfoss/Secomp BD35F compressor is a widely used DC powerd compressor. I'm using it on my boat to cool the fridge. Unfortunately, the original thermostat was defect. Therfore, I decided to create an electronic alternative that has more features than the standard mechanical one.
 
