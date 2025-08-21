@@ -65,7 +65,7 @@ Select appropriate Serial port and then move to the bin file in the deownloaded 
 
 ## Usage
 
-After upload of the firmware you have to re-power the device to start the Wifi-Manager (within 2 minutes after restart). Just look for a new WLAN network with the name "Fridgeconfig_AP" and connect to it, without a password. The browser will start automatically. Then select the network (ssid) you want to connect to and enter the password. 
+After upload of the firmware you have to re-power the device to start the [Wifi-Manager](https://github.com/tzapu/WiFiManager) (within 2 minutes after restart). Just look for a new WLAN network with the name "Fridgeconfig_AP" and connect to it, without a password. The browser will start automatically. Then select the network (ssid) you want to connect to and enter the password. 
 
 If you don't configure or press "Exit" the device remain in AP mode with a changed name "Fridgecontrol_AP".
 
