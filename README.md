@@ -53,7 +53,7 @@ Just [download](https://www.arduino.cc/en/software/) the IDE (version 2.x works 
 - DallasTemperature
 - Preferences
 
-Then download the sketch from GitHud (Button "Code" and download as ZIP) and extract it. Then move to the "FridgeControl.ino" file and open the sketch.
+Then download the sketch from GitHud (Button "Code" and download as ZIP) and extract it. Then move to the [FridgeControl.ino](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControl/FridgeControl.ino) file and open the sketch.
 Connect the D1 mini with an USB-Cable to the PC and upload the sketch to the D1 Mini. Later uploads can be done with the OTA function via network.
 
 ### NodeMCU-PyFlasher
