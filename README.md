@@ -84,7 +84,7 @@ With the buttos you can set the mode:
 - Auto: Standard mode to control the temperature.
 - ON: Switch on the compressor permanently.
 - Off: Switch off the compressor permanently.
-- Boost: Cool down with a different set point and hysteresis.
+- Boost: Cool down for a defined time with a different set point, hysteresis and speed.
 - Defrost: Manually start a dfrost cycle.
 - Set: Opens a settings page.
 
