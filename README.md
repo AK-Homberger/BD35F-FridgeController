@@ -17,7 +17,7 @@ The Danfoss/Secop BD35F compressor is a widely used DC powered compressor. I'm u
 - WLAN support (AP or client mode). Configurable via Wifi Manager.
 - Browser interface and MDNS support (http://fridgecontrol.local).
 - All parameters are configurable with a browser and stored in flash memory of ESP8266.
-- [PCB](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/BD35F-FridgeController/BD35F-FridgeController-PCB.pdf) layout available in repository (KiCad) and can be orderd from [Aisler.net](https://aisler.net/p/VBBOGMUR).
+- [PCB](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/BD35F-FridgeController/BD35F-FridgeController-PCB.pdf) layout is available in repository (KiCad) and can be orderd from [Aisler.net](https://aisler.net/p/VBBOGMUR).
 
 ![Schematic](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/BD35F-FridgeController-Sch.png)
 
