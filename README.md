@@ -25,7 +25,7 @@ The Danfoss/Secop BD35F compressor is a widely used DC powered compressor. I'm u
 
 ## Hardware
 The hardware is based on an ESP8266 (D1 Mini) and a few additional parts. The 5 Volt supply voltage for the D1 Mini is crated wit a [step-down](https://www.reichelt.de/de/de/shop/produkt/dc_dc-wandler_r78e_5_v_500_ma_single-159161) converter. 
-The temperature is measuered with a DS18B20 sensor. The compressor is controlled with an open collector transistor between the connection T and C on the BD35F. 
+The temperature is measuered with a [DS18B20](https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf) sensor. The compressor is controlled with an open collector transistor between the connection T and C on the BD35F. 
 
 The BS35F is measuering the current between T and C. C is on GND level and T has a pull-up resistor to 5 Volt. Only a few milliampere are flowing. A small transitor (BC337) is sufficient here. There are two options: T permanently on GND level means 2000 RPM speed. A PWM signal (5 KHz) with a defined duty-cycle is used to set speeds from 2000 to 3500 RPM.
 
