@@ -16,7 +16,7 @@
 // Implements Two-Point with I controller to improve precision of temperature control
 
 // DS18B20 temperature sensor on D5 pin, Relay / PWM output on pin D6
-// Use 4k7 Ohm resitor as Pull Up on D5 (to 3,3 Volt)
+// Use 4k7 Ohm resitor as Pull-Up on D5 (to 3,3 Volt)
 // Supports relay output (On/Off) or PWM with NPN transistor to control compressor speed between 2000 and 3500 RPM
 // Set PWM to 0 for relay mode
 // Connect Relay output (NO) or NPN Transitor (Open Collector) between T and C connection (C = GND, T at 5 Volt level with resistor)
@@ -77,7 +77,7 @@ unsigned FridgeOffTime = 0;             // Current off time of compressor. Count
 unsigned FridgeLastOnTime = 0;          // Last on time of compressor to calculate duty cycle
 unsigned FridgeLastOffTime = 0;         // Last off time of compressor to calculate duty cycle
 bool FridgeOnOff = Off;                 // Current compessor state
-bool f_update = false;                  // NVS valuse changed. Store new values.
+bool f_update = false;                  // NVS values changed. Store new values.
 
 // Web Server
 ESP8266WebServer web_server(80);  // Web Server at port 80
@@ -103,7 +103,6 @@ void setup() {
 
   WiFiManager wm;
   wm.setConfigPortalTimeout(120);
-
   
   // Set HTTP request events
   web_server.on("/", HandleRoot);                       // This is the Main display page
@@ -118,7 +117,7 @@ void setup() {
   web_server.on("/f_slider", FridgeSlider);             // Handle fridge slider move
   web_server.on("/f_settings", handleSettings);         // Settings page
   web_server.on("/f_get_settings", handleGetSettings);  // JS get settings
-  web_server.on("/f_set_settings", handleSetSettings);  // JS Save settings
+  web_server.on("/f_set_settings", handleSetSettings);  // JS save settings
 
   web_server.onNotFound(HandleNotFound);
 
@@ -132,7 +131,6 @@ void setup() {
     Serial.print("AP IP address: ");
     Serial.println(IP);    
   }
-
 
   // Start OneWire
   sensors.begin();
@@ -335,7 +333,6 @@ void Fridge_Defrost() {
   FridgeBoost = false;
   FridgeCurrentDefrostTime = 0;
   FridgeSwitch(Off);
-
   web_server.send(200);
 }
 
@@ -458,10 +455,10 @@ void HandleFridgeControl() {
       FridgeOffTime++;
     }
 
-    // Set initial average temperature after start to set temperature level when first temperature mesuered
+    // Set initial average temperature after start to set temperature level when first temperature measuered
     if (FridgeTempAvg == -100 && FridgeTemp != -100) FridgeTempAvg = FridgeTempLevel;
 
-    // Calculate average temperature with low pass filter (K = 1/3600). Means average over about one hour
+    // Calculate average temperature with low pass filter (K = 1/3600). Means average over about one hour.
     FridgeTempAvg = FridgeTempAvg + ((FridgeTemp - FridgeTempAvg) / 3600.0);
 
     if (f_update) {  // Store values if changed
@@ -483,7 +480,7 @@ void HandleFridgeControl() {
       f_update = false;
     }
 
-    if (FridgeDefrost == true) {  // Defrost for  FridgeDefrostTime minutes
+    if (FridgeDefrost == true) {  // Defrost for  FridgeDefrostTime in minutes
       FridgeCurrentDefrostTime++;
       if (FridgeCurrentDefrostTime > FridgeDefrostTime * 60) {
         FridgeDefrost = false;
@@ -544,7 +541,7 @@ void FridgeSwitch(bool state) {
     analogWrite(FridgePin, 0);  // Off
   }
 
-  // Measuer On/Off times for fridge duty cycle
+  // Measure On/Off times for fridge duty cycle
   if (state == Off && FridgeOnTime != 0) {
     FridgeLastOnTime = FridgeOnTime;
     FridgeOnTime = 0;
@@ -564,6 +561,3 @@ void loop() {
   web_server.handleClient();
   ArduinoOTA.handle();
 }
-
-
-
