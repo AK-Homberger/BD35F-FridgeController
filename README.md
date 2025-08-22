@@ -57,11 +57,11 @@ Then download the sketch from GitHud (Button "Code" and download as ZIP) and ext
 Connect the D1 mini with an USB-Cable to the PC and upload the sketch to the D1 Mini. Later uploads can be done with the OTA function via network.
 
 ### NodeMCU-PyFlasher
-This works without installation of the IDE. Simply download the [NodeMCU-PyFlasher](https://github.com/nodemcu/nodemcu-firmware/releases) ans start it. 
+This works without installation of the IDE. Simply download the [NodeMCU-PyFlasher](https://github.com/nodemcu/nodemcu-firmware/releases) and start it. 
 
 ![Flasher](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/Flasher.png)
 
-Select appropriate Serial port and then move to the bin file in the deownloaded code. Use the seetings as shown fo the upload.
+Select appropriate serial port and then move to the bin file in the deownloaded code. Use the seetings as shown for the upload.
 
 ## Usage
 
