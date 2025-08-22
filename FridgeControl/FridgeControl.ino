@@ -92,8 +92,6 @@ Preferences preferences;
 
 //*****************************************************************************
 void setup() {
-  int wifi_retry = 0;
-
   // Sensor and Thermostat pin
   // pinMode(SensorPin, INPUT_PULLUP);  // Comment out if you use an external pull up resistor
   pinMode(FridgePin, OUTPUT);        // Sets relay/PWM pin as output
@@ -566,4 +564,5 @@ void loop() {
   web_server.handleClient();
   ArduinoOTA.handle();
 }
+
 
