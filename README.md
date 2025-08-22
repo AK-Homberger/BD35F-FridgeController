@@ -93,13 +93,13 @@ With the buttos you can set the mode:
 With the settings page you can control the behaviour of the controller without a need to recompile the code. The following settings are available:
 
 - Language:   0=English 1= German language
-- Hysteresis: Sets the Hysteresis/Deviation for the two point controller. 2 means +/- 2 K. For a set temperature of 6 that means the temperature will between 4 and 8 degrees.
+- Hysteresis: Sets the Hysteresis/deviation for the two point controller. 2 means +/- 2 K. For a set temperature of 6 that means the temperature will between 4 and 8 degrees.
 - RPM:         The desired speed of the compressor. Set as low as possible to reduce power consumption (2000 = 3,5A, 3500 = 7A). "0" means T permanently to GND and 2000 RPM (original mechanical thermostat behaviour).
 - AVG Error:   This is the allowed deviation from the average. 0 means the compressor will cool down in every cycle until the average temperature reaches the set temperature. The average temperature is calculated with a low pass filter with K of 1/3600. Means average over about one hour.
-- Max          High: The maximum high temperture. The compressor will be switched off if ths level is reached. Independent of average temperature.
-- Max Low:     The maximum low temperture. The compressor will be switched on if ths level is reached. Independent of average temperature.
+- Max          High: The maximum high temperture. The compressor will be switched off, if ths level is reached. Independent of average temperature.
+- Max Low:     The maximum low temperture. The compressor will be switched on, if ths level is reached. Independent of average temperature.
 - Boost Temp.: Desired temperature for the boost function.
-- Boost Hyst.: Hysteresis/Deviation for the boost function.
+- Boost Hyst.: Hysteresis/deviation for the boost function.
 - Boost Time   Time in minutes for the boost function.
 - Boost RPM:   Compressor speed for the boost function.
 - Max Runtime: Used to detect a needed defrost cycle. If the compressor runs for the defined time, a mandatory defrost cycle will start.
