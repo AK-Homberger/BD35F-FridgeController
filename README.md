@@ -85,7 +85,7 @@ With the buttos you can set the mode:
 - ON: Switch on the compressor permanently.
 - Off: Switch off the compressor permanently.
 - Boost: Cool down for a defined time with a different set point, hysteresis and speed.
-- Defrost: Manually start a dfrost cycle.
+- Defrost: Manually start a defrost cycle.
 - Set: Opens a settings page.
 
 ![Web2](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControlWeb2.png)
