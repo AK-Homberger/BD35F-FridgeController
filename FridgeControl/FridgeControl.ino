@@ -20,7 +20,7 @@
 // Supports relay output (On/Off) or PWM with NPN transistor to control compressor speed between 2000 and 3500 RPM
 // Set PWM to 0 for relay mode
 // Connect Relay output (NO) or NPN Transitor (Open Collector) between T and C connection (C = GND, T at 5 Volt level with resistor)
-// Current berwen T and C is only a few mA. A small transistor (eg. BC337) is sufficient. Use 1 kOhm between output pin and basis.
+// Current between T and C is only a few mA. A small transistor (eg. BC337) is sufficient. Use 1 kOhm between output pin and basis.
 
 // Version 1.0, 20.08.2025, AK-Homberger
 
@@ -564,5 +564,6 @@ void loop() {
   web_server.handleClient();
   ArduinoOTA.handle();
 }
+
 
 
