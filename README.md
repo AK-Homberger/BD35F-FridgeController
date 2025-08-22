@@ -75,7 +75,7 @@ To start the web interface enter "http://fridgecontrol.local" in the browser. Th
 
 ![Web1](https://github.com/AK-Homberger/BD35F-FridgeController/blob/main/FridgeControlWeb1.png)
 
-The page shows the current fridge temeperature, the average temperature, the desired Set Temperature. Duty cycle shows the percentage of the on time compared to the last on and off time cycle. The values are also shown in minutes (On/Off). The status filed shows the staus of the controller (Auto, On, Off, Boost or Defrost).
+The page shows the current fridge temperature, the average temperature, the desired set temperature. Duty cycle shows the percentage of the on time compared to the last on and off time cycle. The values are also shown in minutes (On/Off). The status filed shows the staus of the controller (Auto, On, Off, Boost or Defrost).
 
 With the slidebar and +/- you can modify the the set temperature.
 
