@@ -45,7 +45,7 @@ Connect J3 to the compressor connector. Remove the old thermostat cables and con
 There are two ways to install the software to the D1 Mini. Either you install the Arduino IDE or you direcly flash the BIN-file to the device.
 
 ### Arduino IDE
-Just [download](https://www.arduino.cc/en/software/) the IDE (version 2.x works well). Then add the Boad URL in preferences: "https://arduino.esp8266.com/stable/package_esp8266com_index.json" and install the Board software in the IDE. Then install the following libraries with the libray manager:
+Just [download](https://www.arduino.cc/en/software/) the IDE (version 2.x works well). Then add the Boad URL in preferences: "https://arduino.esp8266.com/stable/package_esp8266com_index.json" and install the Board software in the IDE. Then install the following libraries with the library manager:
 
 - WiFiManager
 - ArduinoJson
