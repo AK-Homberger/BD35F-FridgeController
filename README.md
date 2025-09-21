@@ -79,7 +79,7 @@ The page shows the current fridge temperature, the average temperature, the desi
 
 With the slidebar and +/- you can modify the the set temperature.
 
-With the buttos you can set the mode:
+With the buttons you can set the mode:
 
 - Auto: Standard mode to control the temperature.
 - ON: Switch on the compressor permanently.
