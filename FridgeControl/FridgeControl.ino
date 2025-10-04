@@ -22,7 +22,8 @@
 // Connect Relay output (NO) or NPN Transitor (Open Collector) between T and C connection (C = GND, T at 5 Volt level with resistor)
 // Current between T and C is only a few mA. A small transistor (eg. BC337) is sufficient. Use 1 kOhm between output pin and basis.
 
-// Version 1.0, 20.08.2025, AK-Homberger
+// Version 1.1, 04.10.2025, AK-Homberger
+// Corrected duty cycle calculation (double type)
 
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
@@ -93,7 +94,7 @@ Preferences preferences;
 //*****************************************************************************
 void setup() {
   // Sensor and Thermostat pin
-  // pinMode(SensorPin, INPUT_PULLUP);  // Comment out if you use an external pull up resistor
+  //pinMode(SensorPin, INPUT_PULLUP);  // Comment out if you use an external pull up resistor
   pinMode(FridgePin, OUTPUT);        // Sets relay/PWM pin as output
   analogWriteFreq(5000);             // BD35F expects 5 kHz for PWM with duty cycle control
 
@@ -418,7 +419,7 @@ void GetFridgeData() {
   root["avg"] = buf;
 
   if ((FridgeLastOffTime + FridgeLastOnTime) != 0) {
-    dutyCycle = FridgeLastOnTime / (FridgeLastOnTime + FridgeLastOffTime) * 100;
+    dutyCycle = (double)FridgeLastOnTime / ((double)FridgeLastOnTime + (double)FridgeLastOffTime) * 100.0;
   }
 
   snprintf(buf, sizeof(buf), "%3.0f %% %1.0f/%1.0f", dutyCycle, FridgeLastOnTime / 60.0, FridgeLastOffTime / 60.0);
